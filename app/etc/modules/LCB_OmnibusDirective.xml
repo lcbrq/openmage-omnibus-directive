@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LCB_OmnibusDirective>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+            </depends>
+        </LCB_OmnibusDirective>
+    </modules>
+</config>

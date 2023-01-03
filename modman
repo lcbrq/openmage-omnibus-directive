@@ -1,0 +1,6 @@
+app/code/community/LCB/OmnibusDirective
+app/design/frontend/base/default/layout/lcb_omnibusdirective.xml
+app/design/frontend/base/default/template/lcb_omnibusdirective
+app/locale/pl_PL/LCB_OmnibusDirective.csv
+app/locale/ro_RO/LCB_OmnibusDirective.csv
+app/etc/modules/LCB_OmnibusDirective.xml

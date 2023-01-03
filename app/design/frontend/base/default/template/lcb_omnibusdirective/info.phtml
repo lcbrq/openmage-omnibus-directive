@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var LCB_OmnibusDirective_Catalog_Product_Info $this
+ */
+$info = $this->getPriceInfo();
+if (!$info || !$info->getSku()) {
+    return;
+}
+$formattedPrice = Mage::helper('core')->currency($info->getPrice(), true, false);
+?>
+<div class="omnibus-pricing">
+    
+      <?= $this->__('Lowest price of the last 30 days: %s', $formattedPrice) ?>
+        <span title="<?= $this->escapeHtml($this->__('Price as of %s', date('Y-m-d', strtotime($info->getCreatedAt())))) ?>"
+              style="cursor: pointer">&#9432;</span>
+    
+</div>

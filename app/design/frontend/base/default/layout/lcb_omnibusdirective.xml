@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <PRODUCT_TYPE_simple>
+        <reference name="product.info.simple.extra">
+            <block type="lcb_omnibusdirective/catalog_product_info"
+                   name="lcb_omnibusdirective" template="lcb_omnibusdirective/info.phtml" after="-"/>
+        </reference>
+    </PRODUCT_TYPE_simple>
+</layout>
