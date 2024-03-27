@@ -17,7 +17,7 @@ class LCB_OmnibusDirective_Model_Resource_Price extends Mage_Core_Model_Resource
      */
     protected function _beforeSave(Mage_Core_Model_Abstract $object)
     {
-        if ($object->isObjectNew() || !$object->getId() || !$object->getCreatedAt()) {
+        if (!$object->getCreatedAt()) {
             $object->setCreatedAt(Varien_Date::now());
         }
 
